@@ -31,14 +31,14 @@ try {
     $mail->isSMTP();                                            //Send using SMTP
     $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-    $mail->Username   = 'jnishank123@gmail.com';                     //SMTP username
-    $mail->Password   = 'leon uxwr rgwz wtva';                               //SMTP password
+    $mail->Username   = 'Enterfirstmail@gmail.com';                     //SMTP username  -----------------------------------------------important
+    $mail->Password   = 'Enter secret code generate by mail';                               //SMTP password -----------------------------------------------important
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
     $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
-    $mail->setFrom('jnishank123@gmail.com', 'donate_blood');
-    $mail->addAddress('jnishank123@gmail.com', 'BBMS');     //Add a recipient
+    $mail->setFrom('anothermail@gmail.com', 'donate_blood');          -----------------------------------------------important
+    $mail->addAddress('firstmail@gmail.com', 'BBMS');     //Add a recipient -----------------------------------------------important
 
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
